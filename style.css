@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --white: #fff;
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --radius: 1rem;
+}
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Dark-cyan);
+    position: relative;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    height: 100vh;
+}
+
+.card{
+    background-color: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+    max-width: 320px;
+}
+
+.user,
+.numbers{
+    padding: 1rem;
+}
+
+.user{
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+
+.user__img{
+    border-radius: 100%;
+    margin-top: calc(-48px - 5px);
+    border: 5px solid var(white);
+}
+
+.name{
+    margin: .5rem 0;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.name h1{
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.name b{
+    margin-left: 10px;
+    font-weight: 300;
+    color: var(--Dark-grayish-blue);
+}
+
+.name span{
+    font-weight: 300;
+    color: var(--Dark-grayish-blue);
+    font-size: .9rem;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+}
+
+.item-number h3{
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.item-number span{
+    color: var(--Dark-gray);
+    font-size: .6rem;
+    letter-spacing: .1rem;
+}
+
+footer{
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+}
+
+footer a{
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
